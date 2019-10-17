@@ -21,34 +21,17 @@ void setup() {
     
   // Load a soundfile from the data folder of the sketch and play it back double the speed
   file = new SoundFile(this, "sample.mp3");
-  file.play();
+  file.loop();
   file.rate(2);
 }      
 
 void draw() {
 }
-
 ]]></code>
 </example>
 
 <description><![CDATA[
-This method changes the playback rate of the soundfile. 1 is the original speed. 0.5 is half speed and one octave down. 2 is double the speed and one octave up.
-
+Set the relative playback rate of the soundfile. 1 is the original speed. 0.5 is half speed and one octave down. 2 is double the speed and one octave up.
 ]]></description>
-
-<syntax>
-<c>file</c>.rate()
-</syntax>
-	
-<returns></returns>
-
-<related></related>
-
-<availability>1.0</availability>
-
-<type>Method</type>
-
-<partof>Library</partof>
-
 
 </root>

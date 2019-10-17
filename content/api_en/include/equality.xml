@@ -14,15 +14,15 @@
 int a = 23;
 int b = 23;
 if (a == b) {
-  println("variables a and b are equal");
+  println("the values of variables 'a' and 'b' are the same");
 }
 ]]></code>
 </example>
 
 <description><![CDATA[
-Determines if two values are equivalent. The equality operator is different from the assignment operator.<br /> 
+Determines if two values are equivalent. Please note the equality operator (==) is different from the assignment operator (=) and although they look similar, they have a different use. If you're comparing two variables, the quality operator (==) only works with primitive data types like int, float, and char and not with composite data types like Array, Table, and PVector<br /> 
 <br />
-Note that when comparing String objects, you must use the <b>equals()</b> method instead of == to compare their contents. See the reference for String or the <a href="http://wiki.processing.org/w/Troubleshooting#Why_don.27t_these_Strings_equal.3F">troubleshooting</a> note for more explanation.
+Note that when comparing String objects, you must use the <b>equals()</b> method instead of == to compare their contents. See the reference for String or the <a href="https://github.com/processing/processing/wiki/Troubleshooting#why-dont-these-strings-equal">troubleshooting</a> note for more explanation.
 ]]></description>
 
 <syntax>

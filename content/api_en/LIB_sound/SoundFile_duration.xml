@@ -21,32 +21,16 @@ void setup() {
     
   // Load a soundfile from the data folder of the sketch and get the duration of the file
   file = new SoundFile(this, "sample.mp3");
-  println("SFDuration= " + file.duration() + " seconds");
+  println("Duration= " + file.duration() + " seconds");
 }      
 
 void draw() {
 }
-
 ]]></code>
 </example>
 
 <description><![CDATA[
-Returns the duration of the file in seconds
+Returns the duration of the soundfile in seconds.
 ]]></description>
-
-<syntax>
-<c>file</c>.duration()
-</syntax>
-	
-<returns>float</returns>
-
-<related></related>
-
-<availability>1.0</availability>
-
-<type>Method</type>
-
-<partof>Library</partof>
-
 
 </root>

@@ -33,7 +33,7 @@ $pages = array(
         'People'      => array('/people/', 2),
         'Foundation'  => array('/foundation/', 2),
     
-    'FAQ'             => array('http://wiki.processing.org/w/FAQ', 1),
+    'FAQ'             => array('https://github.com/processing/processing/wiki', 1),
     
     );
 
@@ -69,16 +69,16 @@ function navigation($section = '')
 
 	    $html .= "\t\t\t\t\t" . l('Tutorials', $section == 'Tutorials') . "<br>\n";
 	    $html .= "\t\t\t\t\t" . l('Examples', $section == 'Examples') . "<br>\n";
-	    $html .= "\t\t\t\t\t" . l('Books', $section == 'Books') . "<br>\n";
-	    $html .= "\t\t\t\t\t" . l('Handbook', $section == 'Handbook') . "<br><br />\n";
+	    $html .= "\t\t\t\t\t" . l('Books', $section == 'Books') . "<br><br>\n";
+	    #$html .= "\t\t\t\t\t" . l('Handbook', $section == 'Handbook') . "<br><br />\n";
 
 	    $html .= "\t\t\t\t\t" . l('Overview', $section == 'Overview') . "<br> \n";
 	    $html .= "\t\t\t\t\t" . l('People', $section == 'People') . "<br><br>\n";
 	    # $html .= "\t\t\t\t\t" . l('Foundation', $section == 'Foundation') . "<br><br>\n";
 
-	    $html .= "\t\t\t\t\t" . l('Shop', $section == 'Shop') . "<br><br>\n";
+	    #$html .= "\t\t\t\t\t" . l('Shop', $section == 'Shop') . "<br><br>\n";
 	       
-	    $html .= "\t\t\t\t\t" . "<a href=\"http://forum.processing.org\"" . 'class="outward"' . "><span>&raquo;</span>Forum</a><br> \n";
+	    $html .= "\t\t\t\t\t" . "<a href=\"https://discourse.processing.org\"" . 'class="outward"' . "><span>&raquo;</span>Forum</a><br> \n";
         $html .= "\t\t\t\t\t" . "<a href=\"https://github.com/processing\"" . 'class="outward"' . "><span>&raquo;</span>GitHub</a><br> \n";
         $html .= "\t\t\t\t\t" . "<a href=\"https://github.com/processing/processing/issues?state=open\"" . 'class="outward"' . "><span>&raquo;</span>Issues</a><br> \n";
         $html .= "\t\t\t\t\t" . "<a href=\"https://github.com/processing/processing/wiki/\"" . 'class="outward"' . "><span>&raquo;</span>Wiki</a><br> \n";

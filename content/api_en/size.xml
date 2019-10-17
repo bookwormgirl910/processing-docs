@@ -51,7 +51,7 @@ box(35);
 </example>
 
 <description><![CDATA[
-Defines the dimension of the display window width and height in units of pixels. In a program that has the <b>setup()</b> function, the <b>size()</b> function must be the first line of code inside <b>setup()</b>.<br />
+Defines the dimension of the display window width and height in units of pixels. In a program that has the <b>setup()</b> function, the <b>size()</b> function must be the first line of code inside <b>setup()</b>, and the <b>setup()</b> function must appear in the code tab with the same name as your sketch folder.<br />
 <br />
 The built-in variables <b>width</b> and <b>height</b> are set by the parameters passed to this function. For example, running <b>size(640, 480)</b> will assign 640 to the <b>width</b> variable and 480 to the height <b>variable</b>. If <b>size()</b> is not used, the window will be given a default size of 100 x 100 pixels.<br />
 <br />
@@ -72,6 +72,8 @@ The <b>renderer</b> parameter selects which rendering engine to use. For example
 <b>FX2D</b> (JavaFX 2D): A 2D renderer that uses JavaFX, which may be faster for some applications, but has some compatibility quirks.
 <br />
 <b>PDF</b>: The PDF renderer draws 2D graphics directly to an Acrobat PDF file. This produces excellent results when you need vector shapes for high-resolution output or printing. You must first use Import Library &rarr; PDF to make use of the library. More information can be found in the PDF library reference.<br />
+<br />
+<b>SVG</b>: The SVG renderer draws 2D graphics directly to an SVG file. This is great for importing into other vector programs or using for digital fabrication. You must first use Import Library &rarr; SVG Export to make use of the library.<br />
 <br />
 As of Processing 3.0, to use variables as the parameters to <b>size()</b> function, place the <b>size()</b> function within the <b>settings()</b> function (instead of <b>setup()</b>). There is more information about this on the <b>settings()</b> reference page.<br />
 <br />

@@ -22,31 +22,15 @@ void setup() {
   // Load a soundfile from the /data folder of the sketch and play it back
   file = new SoundFile(this, "sample.mp3");
   file.play();
-}      
+}
 
 void draw() {
 }
-
 ]]></code>
 </example>
 
 <description><![CDATA[
-Starts the playback of a soundfile.
+Starts the playback of the soundfile. Only plays to the end of the soundfile once. If cue() or pause() were called previously, playback will resume from the cued position.
 ]]></description>
-
-<syntax>
-<c>file</c>.play()
-</syntax>
-	
-<returns></returns>
-
-<related></related>
-
-<availability>1.0</availability>
-
-<type>Method</type>
-
-<partof>Library</partof>
-
 
 </root>
